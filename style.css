@@ -1,0 +1,143 @@
+/* Google font- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    background-color: #31363F;
+    padding: 25px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 36%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 25px 25px 0 0;
+    background-color: #76ABAE;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #222831;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+.profile-card .biodata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.biodata .name {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.biodata .school {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.profile-card .icon-socialMedia {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.icon-socialMedia .link {
+    text-decoration: none;
+    margin: 0 10px;
+    width: 34px;
+    height: 34px;
+    background-color: #76ABAE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link i {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.profile-card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button {
+    margin: 0 30px;
+    background-color: #76ABAE;
+    padding: 3px 4px;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.buttons .button:hover {
+    background-color: #38c1c9;
+}
+
+
+.profile-card .analystic {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.analystic .data {
+    padding: 0 20px;
+    color: #fff;
+    font-weight: 300;
+    border-right: 2px solid #fff;
+}
+
+.data:last-child {
+    border-right: none;
+}
